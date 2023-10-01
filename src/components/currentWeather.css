@@ -8,9 +8,10 @@
         relative
         w-[30rem] 
         h-[30rem] 
-        bg-[url('../assets/background-main.jpeg')] 
+        bg-[url('../assets/background-main.png')] 
         bg-no-repeat 
-        bg-cover 
+        bg-cover
+        bg-right-bottom
         rounded-[0.625rem]
     }
 
@@ -40,7 +41,7 @@
                 relative
                 text-sm
                 font-bold
-                text-[rgba(194, 191, 244, 1)]
+                text-[--text-purple]
             }
 
     .statistcs {
