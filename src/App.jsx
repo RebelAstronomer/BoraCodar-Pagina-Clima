@@ -1,7 +1,8 @@
-import CurrentWeather from "./components/CurrentWeather"
-import AirQuality from "./components/AirQuality"
+import CurrentWeather from './components/CurrentWeather';
+import AirQuality from './components/AirQuality';
 
 function App() {
+
   return (
     <main>
       <div className="containerMain">
@@ -9,7 +10,7 @@ function App() {
         <AirQuality/>
       </div>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
