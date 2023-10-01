@@ -1,7 +1,10 @@
+import CurrentWeather from "./components/CurrentWeather"
+
+
 function App() {
   return (
     <main>
-      Hello world
+      <CurrentWeather/>
     </main>
   )
 }
