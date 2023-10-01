@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .mainStatus {
+        @apply 
+        relative
+        w-[30rem] 
+        h-[30rem] 
+        bg-[url('../assets/background-main.jpeg')] 
+        bg-no-repeat 
+        bg-cover 
+        rounded-[0.625rem]
+    }
+
+    .temperature {
+        @apply 
+        relative
+    }
+  
+    .location {
+        @apply 
+        relative
+    }
+
+    .statistcs {
+        @apply 
+        relative
+    }
+
+    .weatherIndicated {
+        @apply 
+        absolute
+        w-[11rem]
+        h-[11rem]
+        bg-[url('../assets/cloud.png')] 
+        bg-no-repeat 
+        bg-cover
+        top-[-56px]
+        left-[-56px]
+    }
+}

@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap'); /*font-family: 'Lato', sans-serif;*/
-
-
 @layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap'); /*font-family: 'Lato', sans-serif;*/
+
   :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -20,6 +19,21 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+  }
+  main {
+    @apply
+    w-screen
+    h-screen
+    box-border
+  }
+
+  /* ESTA FLEX, MAS VAI SER GRID DEPOIS!!! */
+  .containerMain {
+    @apply
+    h-full
+    flex
+    justify-center
+    items-center
   }
 }
 

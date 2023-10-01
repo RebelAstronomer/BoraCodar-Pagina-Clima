@@ -4,7 +4,9 @@ import CurrentWeather from "./components/CurrentWeather"
 function App() {
   return (
     <main>
-      <CurrentWeather/>
+      <div className="containerMain">
+        <CurrentWeather/>
+      </div>
     </main>
   )
 }
