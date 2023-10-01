@@ -16,9 +16,43 @@
     }
 
     .temperature {
-        @apply 
+        @apply
+        w-[6.438rem]
+        h-[8.375rem]
         relative
+        m-auto
     }
+            .degreesNumber {
+                @apply
+                w-[6.438rem]
+                h-[6.625rem]
+                flex
+                justify-center
+                items-center
+            }
+            .degreesNumber p {
+                @apply
+                text-[5.5rem]
+                font-bold
+            }
+            .minMaxDegreesNumber {
+                @apply
+                w-full
+                text-center
+                pt-1
+            }
+            .minDegreesNumber {
+                @apply
+                text-xl
+                font-bold 
+                pr-1     
+            }
+            .maxDegreesNumber {
+                @apply
+                text-xl
+                font-bold
+                text-[--text-purple]
+            }
   
     .location {
         @apply 
