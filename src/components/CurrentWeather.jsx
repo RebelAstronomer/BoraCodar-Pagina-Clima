@@ -1,20 +1,17 @@
-import './currentWeather.css'
+import './currentWeather.css';
 
 export default function CurrentWeather() {
   return (
-    <section className='mainStatus'>
-        <div className="temperature">
-
+    <section className="mainStatus">
+      <div className="location">
+        <div className='pinIcon'></div>
+        <div className='pinTxt'>
+          Rio do Sul, <span>SC</span>
         </div>
-        <div className="location">
-
-        </div>
-        <div className='statistcs'>
-
-        </div>
-        <div className='weatherIndicated'>
-
-        </div>
+      </div>
+      <div className="temperature"></div>
+      <div className="statistcs"></div>
+      <div className="weatherIndicated"></div>
     </section>
-  )
+  );
 }

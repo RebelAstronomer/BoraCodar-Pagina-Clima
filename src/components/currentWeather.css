@@ -21,8 +21,27 @@
   
     .location {
         @apply 
-        relative
+        flex
+        justify-end
+        items-center
+        gap-[0.25rem]
+        p-[2rem]
     }
+            .pinIcon {
+                @apply
+                w-[1.25rem]
+                h-[1.25rem]
+                bg-[url('../assets/pin.png')]
+                bg-no-repeat
+                bg-cover
+            }
+            .pinTxt {
+                @apply
+                relative
+                text-sm
+                font-bold
+                text-[rgba(194, 191, 244, 1)]
+            }
 
     .statistcs {
         @apply 
