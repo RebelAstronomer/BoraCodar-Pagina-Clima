@@ -14,7 +14,9 @@
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
     --bg-purple: #6D67D0;
+    --bg-purple60:#6660C899;
     --text-green: #87EBCD;
+    --text-purple: #C2BFF4;
     --text-white: #DAD8F7;
     
     font-synthesis: none;
