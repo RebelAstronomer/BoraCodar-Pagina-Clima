@@ -5,13 +5,17 @@
 @layer components {
     .mainStatus {
         @apply 
+        flex
+        flex-col
+        justify-center
+
         relative
         w-[30rem] 
         h-[30rem] 
         bg-[url('../assets/background-main.png')] 
         bg-no-repeat 
         bg-cover
-        bg-right-bottom
+        bg-left-top
         rounded-[0.625rem]
     }
 
@@ -35,6 +39,18 @@
                 text-[5.5rem]
                 font-bold
             }
+            .degrees {
+                @apply
+                w-[1.625rem]
+                h-[1.813rem]
+                absolute
+                right-[-1.875rem]
+                top-[1.063rem]
+
+                text-2xl
+                font-bold
+                text-[--text-white]
+            }
             .minMaxDegreesNumber {
                 @apply
                 w-full
@@ -55,12 +71,15 @@
             }
   
     .location {
-        @apply 
+        @apply
+        absolute
+        right-[2rem]
+        top-[2rem]
+
         flex
         justify-end
         items-center
         gap-[0.25rem]
-        p-[2rem]
     }
             .pinIcon {
                 @apply
@@ -72,7 +91,6 @@
             }
             .pinTxt {
                 @apply
-                relative
                 text-sm
                 font-bold
                 text-[--text-purple]
@@ -80,8 +98,41 @@
 
     .statistcs {
         @apply 
-        relative
+        flex
+        gap-2
+        m-3
     }
+            .statistcs div {
+                @apply
+                flex
+                items-center
+                py-[0.75rem]
+                px-[1rem]
+                bg-[--bg-purple60]
+                w-[9.167rem]
+                h-[3.75rem]
+
+                rounded-md
+                space-x-3
+            }
+            .boxStatistcs img {
+                @apply
+                w-8
+                h-8
+            }
+            .infoStatistcs {
+                @apply
+                text-xs
+                font-normal
+
+                w-[59px]
+                h-[36px]
+            }
+            .infoStatistcs p {
+                @apply
+                text-lg
+                font-bold
+            }
 
     .weatherIndicated {
         @apply 
