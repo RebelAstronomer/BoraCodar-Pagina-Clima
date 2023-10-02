@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .WeekWeather{
+        @apply 
+        flex
+        gap-3
+        p-10
+        max-w-[578px]
+        bg-[--bg-purple]
+        rounded-[0.625rem];
+    }
+    .day{
+        @apply 
+        flex
+        flex-col
+        justify-center
+        items-center
+        gap-4
+        w-[90px]
+        ;
+    }
+    .day-name{
+        @apply 
+        text-[--text-white]
+        text-sm 
+        font-bold;
+    }
+    .img-day{
+        @apply
+        w-16;
+    }
+    .day-temperature{
+        @apply 
+        flex
+        justify-center
+        gap-2
+        font-bold;
+    }
+    .temperature-max{
+        @apply text-[--text-white];
+    }
+}
