@@ -5,12 +5,14 @@
 @layer components {
     .mainStatus {
         @apply 
+        col-span-2
+        row-span-2
         flex
         flex-col
         justify-center
 
         relative
-        w-[30rem] 
+        max-w-[30rem] 
         h-[30rem] 
         bg-[url('../assets/background-main.png')] 
         bg-no-repeat 
@@ -101,6 +103,7 @@
         flex
         gap-2
         m-3
+        items-end
     }
             .statistcs div {
                 @apply

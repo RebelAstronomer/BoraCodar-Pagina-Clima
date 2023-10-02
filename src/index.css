@@ -9,6 +9,7 @@
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
     font-weight: 400;
+    overflow-y: hidden;;
   
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
@@ -27,21 +28,20 @@
   }
   main {
     @apply
-    w-screen
-    h-screen
+    h-full
     box-border
     bg-[url('./assets/Background.png')]
     bg-no-repeat
     bg-cover
   }
 
-  /* ESTA FLEX, MAS VAI SER GRID DEPOIS!!! */
   .containerMain {
     @apply
-    h-full
-    flex
-    justify-center
-    items-center
+    grid
+    grid-cols-4
+    grid-rows-2
+    py-[9rem]
+    px-[8.625rem]
   }
 }
 

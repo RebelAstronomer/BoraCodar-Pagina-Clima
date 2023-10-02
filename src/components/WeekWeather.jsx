@@ -15,7 +15,7 @@ export default function WeekWeather() {
             </div>
         </div>
         <div className="day">
-            <p className="day-name">Segunda-Feira</p>
+            <p className="day-name">Segunda</p>
             <div className="img-day">
                 <img src={Sun} alt="weather"/>
             </div>
@@ -25,7 +25,7 @@ export default function WeekWeather() {
             </div>
         </div>
         <div className="day">
-            <p className="day-name">Terça-Feira</p>
+            <p className="day-name">Terça</p>
             <div className="img-day">
                 <img src={Sun} alt="weather"/>
             </div>
@@ -35,7 +35,7 @@ export default function WeekWeather() {
             </div>
         </div>
         <div className="day">
-            <p className="day-name">Quarta-Feira</p>
+            <p className="day-name">Quarta</p>
             <div className="img-day">
                 <img src={Sun} alt="weather"/>
             </div>
@@ -45,7 +45,7 @@ export default function WeekWeather() {
             </div>
         </div>
         <div className="day">
-            <p className="day-name">Quinta-Feira</p>
+            <p className="day-name">Quinta</p>
             <div className="img-day">
                 <img src={Sun} alt="weather"/>
             </div>

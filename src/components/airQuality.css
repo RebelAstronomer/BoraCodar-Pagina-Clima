@@ -4,27 +4,52 @@
 
 @layer components{
     .air-quality{
-        @apply p-4 bg-[var(--bg-purple)] max-w-[277px] rounded-[0.625rem];
+        @apply 
+        p-4
+        bg-[var(--bg-purple)]
+        w-[277px]
+        h-[244px]
+        rounded-[0.625rem]
+        mb-6
     }
     .quality-title{
-        @apply text-sm font-bold text-center;
+        @apply 
+        text-sm 
+        font-bold 
+        text-center
      }
     .result{
-        @apply text-center py-8;
+        @apply 
+        text-center 
+        py-8
     }
     .result-text{
-        @apply text-[var(--text-green)] text-lg font-bold;
+        @apply 
+        text-[var(--text-green)] 
+        text-lg 
+        font-bold
     }
     .result-number{
-        @apply text-4xl font-bold;
+        @apply 
+        text-4xl 
+        font-bold
     }
     .quality-standards{
-        @apply flex w-full gap-4 justify-center items-center;
+        @apply 
+        flex 
+        w-full 
+        gap-4 
+        justify-center 
+        items-center
     }
     .air-numbers{
-        @apply text-sm font-bold text-[var(--text-green)];
+        @apply 
+        text-sm 
+        font-bold
+        text-[var(--text-green)]
     }
     .air-subtitles{
-        @apply text-xs;
+        @apply 
+        text-xs
     }
 }
