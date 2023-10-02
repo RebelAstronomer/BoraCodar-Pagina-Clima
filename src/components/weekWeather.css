@@ -4,13 +4,15 @@
 
 @layer components{
     .WeekWeather{
-        @apply 
+        @apply
+        col-span-2
         flex
         gap-3
         p-10
-        max-w-[578px]
+        w-[578px]
+        h-[212px]
         bg-[--bg-purple]
-        rounded-[0.625rem];
+        rounded-[0.625rem]
     }
     .day{
         @apply 
@@ -20,26 +22,26 @@
         items-center
         gap-4
         w-[90px]
-        ;
     }
     .day-name{
         @apply 
         text-[--text-white]
         text-sm 
-        font-bold;
+        font-bold
     }
     .img-day{
         @apply
-        w-16;
+        w-16
     }
     .day-temperature{
         @apply 
         flex
         justify-center
         gap-2
-        font-bold;
+        font-bold
     }
     .temperature-max{
-        @apply text-[--text-white];
+        @apply 
+        text-[--text-white]
     }
 }
