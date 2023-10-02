@@ -1,27 +1,28 @@
+/* eslint-disable react/prop-types */
 import './currentWeather.css';
-import Windy from '../assets/windy.png'
-import Humidity from '../assets/humidity.png'
-import MaybeRain from '../assets/maybe-rain.png'
+import Windy from '../assets/windy.png';
+import Humidity from '../assets/humidity.png';
+import MaybeRain from '../assets/maybe-rain.png';
 
-export default function CurrentWeather() {
+export default function CurrentWeather({ data }) {
   return (
     <section className="mainStatus">
       <div className="location">
         <div className='pinIcon'></div>
         <div className='pinTxt'>
-          Rio do Sul, <span>SC</span>
+          {data?.location?.name}, <span>{data?.location?.region}</span>
         </div>
       </div>
       <div className="temperature">
         <div className='degreesNumber'>
-          <p>18</p>
+          <p>{data?.current?.temp_c}</p>
         </div>
         <div className='degrees'>
           °C
         </div>
         <div className='minMaxDegreesNumber'>
-            <span className='minDegreesNumber'>22°</span>
-            <span className='maxDegreesNumber'>16°</span>
+          <span className='minDegreesNumber'>{Math.round(data?.forecast?.forecastday[0]?.day?.maxtemp_c)}°</span>
+          <span className='maxDegreesNumber'>{Math.round(data?.forecast?.forecastday[0]?.day?.mintemp_c)}°</span>
         </div>
       </div>
       <div className="statistcs">
@@ -29,21 +30,21 @@ export default function CurrentWeather() {
           <img src={Windy} alt="Vento" />
           <p className='infoStatistcs'>
             Vento
-            <p>17 <span className='text-sm'>km/h</span></p>
+            <p>{Math.round(data?.current?.wind_kph)} <span className='text-sm'>km/h</span></p>
           </p>
         </div>
         <div className='boxStatistcs'>
           <img src={Humidity} alt="Umidade" />
-            <p className='infoStatistcs'>
+          <p className='infoStatistcs'>
               Umidade
-              <p>31 <span className='text-sm'>%</span></p>
-            </p>
+            <p>{data?.current?.humidity} <span className='text-sm'>%</span></p>
+          </p>
         </div>
         <div className='boxStatistcs'>
-        <img src={MaybeRain} alt="Chuva" />
+          <img src={MaybeRain} alt="Chuva" />
           <p className='infoStatistcs'>
             Chuva
-            <p>10 <span className='text-sm'>%</span></p>
+            <p>{data?.current?.precip_mm} <span className='text-sm'>%</span></p>
           </p>
         </div>
       </div>
