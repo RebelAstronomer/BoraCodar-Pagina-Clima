@@ -15,7 +15,7 @@ export default function CurrentWeather({ data }) {
       </div>
       <div className="temperature">
         <div className='degreesNumber'>
-          <p>{data?.current?.temp_c}</p>
+          <p>{Math.round(data?.current?.temp_c)}</p>
         </div>
         <div className='degrees'>
           °C
@@ -36,7 +36,7 @@ export default function CurrentWeather({ data }) {
         <div className='boxStatistcs'>
           <img src={Humidity} alt="Umidade" />
           <p className='infoStatistcs'>
-              Umidade
+            Umidade
             <p>{data?.current?.humidity} <span className='text-sm'>%</span></p>
           </p>
         </div>
